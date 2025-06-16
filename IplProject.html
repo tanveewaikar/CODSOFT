@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Official IPL Demo Website - Fixtures, Points Table, Stats, Videos, and More">
+        <meta name="keywords"
+            content="IPL, Cricket, TATA IPL, Points Table, Teams, Stats, Highlights">
+        <meta name="author" content="Tanvee Waikar">
+        <link rel="icon" href="iplProjectImages/iplLogo.png" type="image/png">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="IplProject.css">
+        <title>IPL DEMO WEBSITE </title>
+    </head>
+    <body>
+        <!-- First Navigation Bar (BCCI.TV + Social Icons) -->
+        <!-- First Navigation Bar -->
+        <header>
+            <div class="firstDiv">
+                <div class="firstNavLeft">
+                    <img src="iplProjectImages/bcciLogo.png" alt="BCCCI Logo"
+                        class="firstNavLogo">
+                    <h6 id="bcci">BCCI.TV</h6>
+                    <img src="iplProjectImages/iplWplLogo.png"
+                        alt="tata wpl logo" class="firstNavLogo" id="wplL">
+                </div>
+                <div class="firstNavRight">
+                    <h6 id="text">Follow US</h6>
+                    <i class="fa-brands fa-x-twitter fa-2x icons" id="twit"
+                        aria-label="Twitter"></i>
+                    <i class="fa-brands fa-instagram fa-2x icons" id="insta"
+                        arial-label="Instagram"></i>
+                    <i class="fa-brands fa-facebook fa-2x icons" id="facebook"
+                        aria-label="Facebook"></i>
+                </div>
+            </div>
+            <!-- Second Navigation Bar -->
+            <div class="secondNav">
+                <nav>
+                    <img src="iplProjectImages/iplLogo.png" alt="IPL Logo"
+                        id="iplLogo">
+                    <ul class="mainNav">
+                        <li><a href="matches.html">MATCHES</a></li>
+                        <li><a href="pointsTable.html">POINTS TABLE</a></li>
+                        <li class="dropdown">
+                            <a href="videos.html" class="dropdownbtn">VIDEOS</a>
+                            <div class="dropdown-content">
+                                <a href="#"><b>LATEST</b></a>
+                                <a href="#"><b>IPL EXCLUSIVE</b></a>
+                                <a href="#"><b>MAGIC MOVMENTS</b></a>
+                                <a href="#"><b>HIGHLIGHTS</b></a>
+                                <a href="#"><b>INTERVIEWS</b></a>
+                                <a href="#"><b>PRESS CONFERENCE</b></a>
+                                <a href="#"><b>ALL</b></a>
+                            </div>
+                        </li>
+                        <li><a href="Teams.html">TEAMS</a></li>
+                        <li class="dropdown">
+                            <a href="news.html" class="dropdownbtn">NEWS</a>
+                            <div class="dropdown-content">
+                                <a href="#"><b>ALL NEWS</b></a>
+                                <a href="#"><b>MATCH REPORTS</b></a>
+                            </div>
+                        </li>
+                        <li><a href="fantasy.html">FANTASY</a></li>
+                        <li class="dropdown">
+                            <a href="stats.html" class="dropdownbtn">STATS</a>
+                            <div class="dropdown-content">
+                                <a href="#"><b>OVERALL STATS</b></a>
+                                <a href="#"><b>HEAD TO HEAD</b></a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="more.html" class="dropdownbtn">MORE</a>
+                            <div class="dropdown-content">
+                                <a href="#"><b>FAN CONTESTS</b></a>
+                                <a href="#"><b>PHOTOS</b></a>
+                                <a href="#"><b>MOBILE PRODUCTS</b></a>
+                                <a href="#"><b>VENUE</b></a>
+                                <a href="#"><b>AUCTION</b></a>
+                                <a href="#"><b>ABOUT</b></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner Section -->
+        <main>
+            <div class="banner-container">
+                <div class="banner-slider">
+                    <img class="banner-img"
+                        src="iplProjectImages/iplBanner1.jpeg"
+                        alt="banner1" id="ban1">
+                    <img class="banner-img"
+                        src="iplProjectImages/iplBanner2.jpeg"
+                        alt="banner2">
+                    <img class="banner-img"
+                        src="iplProjectImages/iplBanner3.jpg"
+                        alt="banner3">
+                </div>
+                <div class="banner-caption">
+                    <h2>Good Afternoon!</h2>
+                    <p>Curated shots for you</p>
+                    <img src="iplProjectImages/iplAuction.png"
+                        alt="IPL Auction Image">
+                </div>
+            </div>
+        </main>
+
+        <!--What are you looking text and container structure -->
+        <div class="MainContainer">
+            <div class="box">
+                <h2 id="box">What Are You Looking For?</h2>
+            </div>
+            <div class="containers">
+
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-calendar fa-2x"></i>
+                        <span class="lookText">Fixtures</span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple fa-2x"></i>
+                        <span class="lookText">Points Table</span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie fa-2x"></i>
+                        <span class="lookText">Overall Stats</span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-people-group fa-2x"></i>
+                        <span class="lookText">All Teams</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Magic movments container styling -->
+            <main>
+                <section class="Magicbodycont">
+                    <div class="movcont">
+                        <div><h2>MAGIC MOMENTS</h2></div>
+
+                        <button class="btn1">See More</button>
+                    </div>
+                    <div class="magicMovments">
+                        <div class="magicItem">
+                            <img src="iplProjectImages/iplMagicMovm1.jpeg"
+                                alt="ipl magic Movments img1"
+                                class="magicMovmentsImg" id="magic1">
+                            <div class="movText" id="magict1">2024 Rewind
+                                Special: Harshal's All Wickets </div>
+                        </div>
+                        <div class="magicItem">
+                            <img src="iplProjectImages/iplMagicMovm2.jpeg"
+                                alt="ipl magic Movments img2"
+                                class="magicMovmentsImg">
+                            <div class="movText">2024 Rewind Special: Abhishek's
+                                All Sixes</div>
+                        </div>
+                        <div class="magicItem">
+                            <img src="iplProjectImages/iplMagicMovm3.jpeg"
+                                alt="ipl magic Movments img3"
+                                class="magicMovmentsImg">
+                            <div class="movText">2024 Rewind Special: Virat's
+                                All Centuries</div>
+                        </div>
+                        <div class="magicItem">
+                            <img src="iplProjectImages/iplMagicMovm4.jpeg"
+                                alt="ipl magic Movments img4"
+                                class="magicMovmentsImg">
+                            <div class="movText">2024 Rewind special: KKR vs SRH
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Exclusive movments container styling -->
+
+                <section class="Exclbodycont">
+                    <div class="Exclmcont">
+                        <div><h2>EXCLUSIVE MOMENTS</h2></div>
+
+                        <button class="btn2">See More</button>
+                    </div>
+                    <div class="exclMovments">
+                        <div class="exclItem">
+                            <img src="iplProjectImages/iplExclusive1.jpeg"
+                                alt="ipl excl Movments img1"
+                                class="ExclMovmentsImg">
+                            <div class="ExclText">IPL Schedule 2024: Start Date,
+                                match Fixtures, Teams, stadium</div>
+                        </div>
+                        <div class="exclItem">
+                            <img src="iplProjectImages/iplExclusive2.jpeg"
+                                alt="ipl excl Movments img2"
+                                class="ExclMovmentsImg">
+                            <div class="ExclText">IpL 2024: All You Need To Know
+                                About IPL 2024 </div>
+                        </div>
+                        <div class="exclItem">
+                            <img src="iplProjectImages/iplExclusive3.jpg"
+                                alt="ipl excl Movments img3"
+                                class="ExclMovmentsImg">
+                            <div class="ExclText">IPL 2024: Virat Kohli unveils
+                                a braver side to opening</div>
+                        </div>
+                        <div class="exclItem">
+                            <img src="iplProjectImages/iplExclusive4.jpg"
+                                alt="ipl excl Movments img4"
+                                class="ExclMovmentsImg">
+                            <div class="ExclText">IPL 2024: KKR VS SRH FINAL
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--latest news container styling -->
+
+                <section class="LatNbodycont">
+                    <div class="Latncont">
+                        <div><h2>LATEST NEWS</h2></div>
+
+                        <button class="btn3">See More</button>
+                    </div>
+                    <div class="latestNews">
+                        <div class="newsItem">
+                            <img src="iplProjectImages/iplLatestNews1.jpg"
+                                alt="ipl latest news img1" class="LatnImg">
+                            <div class="LatnText">BCCI announces schedule for
+                                TATA IPL 2025</div>
+                        </div>
+                        <div class="newsItem">
+                            <img src="iplProjectImages/iplLatestNews2.jpg"
+                                alt="ipl latest news img2" class="LatnImg">
+                            <div class="LatnText">Mujeeb-ur-Rahman replaces
+                                Allah-ghazanfar in MI </div>
+                        </div>
+                        <div class="newsItem">
+                            <img src="iplProjectImages/iplLatestNews3.jpg"
+                                alt="ipl latest news img3" class="LatnImg">
+                            <div class="LatnText">Register for TATA IPL 2025
+                                auction</div>
+                        </div>
+                        <div class="newsItem">
+                            <img src="iplProjectImages/iplLatestNews4.jpg"
+                                alt="ipl latest news img4" class="LatnImg">
+                            <div class="LatnText">TATA IPL 2025 Player Auction
+                                List announced </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- footer banner style -->
+            <div class="info">
+                <div class="infoItem">
+                    <h2>Get The Official IPL App</h2>
+                    <p>get the latest scores on the go. Find the latest
+                        content,including match highlights, press conferences
+                        and recap all at your fingertips by downloading the
+                        official IPL app</p>
+                    <p>Available on both App store and playstore.</p>
+                    <a href="#">Download here for free</a>
+                </div>
+                <div class="infoItem">
+                    <img src="iplProjectImages/iplPhone.png"
+                        alt="ipl phone img">
+                </div>
+            </div>
+            <!-- last footer style -->
+            <footer>
+                <div class="footerCont">
+                    <div class="footerContBox14">
+                        <div class="footerContItems">
+                            <h2>TEAMS</h2>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Royal Challengers Bangalore</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Gujarat Titans</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Delhi Capitals</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Lucknow Super Giants</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Rajasthan Royals</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Mumbai Indians</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Punjab Kings</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Kolkata Knight Riders</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Sunrises Hayderabad</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Chennai Super Kings</a>
+                        </div>
+                    </div>
+
+                    <div class="footerContBox23">
+                        <div class="footerContItems">
+                            <h2>ABOUT</h2>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">About us</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Anti Corruption Code</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Anti Doping Rules</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">TUE Application Form</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Anti Discrimination Code</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Clothing And Equipment Regulation</a>
+                        </div>
+                        <div class="footerContItems" style="width: 45vh;">
+                            <a href="#">Code Of Conduct For Players Official</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">News Access Regulation</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Image Use Terms</a>
+                        </div>
+                    </div>
+
+                    <div class="footerContBox23">
+                        <div class="footerContItems">
+                            <h2>GUIDELINES</h2>
+                        </div>
+                        <div class="footerContItems" style="width: 52vh;">
+                            <a href="#">Ipl Code Of Conduct For Match
+                                Officials</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Brand And Protection Guidelines</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Governing Council</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Match Playing Conditions</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">PMOA Minimum Standard</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Suspect Action Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="footerContBox14">
+                        <div class="footerContItems">
+                            <h2>CONTACT</h2>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Sponsorship</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Privacy and Policy</a>
+                        </div>
+                        <div class="footerContItems">
+                            <a href="#">Terms And Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright">
+                <p>Copyright © IPL 2025 All Rights Reserved.</p>
+            </div>
+        </body>
+    </html>  

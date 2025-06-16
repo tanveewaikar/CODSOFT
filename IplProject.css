@@ -1,0 +1,729 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(2, 2, 46);
+}
+
+/* First navigation bar style */
+.firstDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(4, 27, 103);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.firstNavLeft {
+    display: flex;
+    align-items: center;
+}
+
+.firstNavRight {
+    display: flex;
+    align-items: center;
+}
+
+.firstNavLogo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#wplL {
+    width: 60px;
+    margin-left: 3vh;
+}
+
+#bcci {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5vh;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#text:hover {
+    color: white;
+}
+
+.icons {
+    color: rgba(255, 255, 255, 0.2);
+    margin: 2vh 5vh 2vh 1vh;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: white;
+}
+
+
+/* Second navigation bar style */
+.secondNav {
+    width: 100%;
+    background-color: rgb(15, 43, 135);
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#iplLogo {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#iplLogo:hover {
+    transform: scale(1.2);
+}
+
+.mainNav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex: 1;
+    justify-content: center;
+}
+
+.mainNav li {
+    margin: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    font-size: small;
+    display: block;
+}
+
+li a:hover {
+    background-color: rgb(4, 21, 76);
+}
+
+nav i {
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease;
+    cursor: pointer;
+    /* margin: 0vh 3.5vh 2vh 2vh; */
+    padding: 0vh 4vh 4vh 0vh;
+}
+
+nav i:hover {
+    transform: scale(1.3);
+    color: white;
+}
+
+/* Dropdown style */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(253, 84, 22);
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.2);
+}
+
+.dropdownbtn:hover {
+    font-weight: bolder;
+}
+
+/* Banner */
+.banner-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.banner-slider {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.banner-slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    animation: slide 12s infinite;
+    opacity: 0;
+}
+.banner-slider img:nth-child(1) { 
+    animation-delay: 0s; 
+}
+.banner-slider img:nth-child(2) {
+     animation-delay: 4s; 
+    }
+.banner-slider img:nth-child(3) { 
+    animation-delay: 8s; 
+}
+
+@keyframes slide {
+    0%, 100% { opacity: 0; }
+    10%, 30% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+/* Banner Caption */
+.banner-caption {
+    background-color: rgb(14, 14, 50);
+    padding: 30px 50px;
+    border-radius: 0 0 40px 40px;
+    color: white;
+}
+.banner-caption h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+.banner-caption h2:hover{
+color: red;
+transform: skew(25deg);
+}
+.banner-caption p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.5);
+}
+.banner-caption img {
+    height: 140px;
+    width: auto;
+    /* position: relative;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    transition: 2s ease;
+}
+.banner-caption img:hover{
+    transform: rotateY(360deg);
+}
+/* @keyframes move {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+       left: 100px;
+       top: 0px;
+    }
+    50%{
+       left: 100px;
+       top: 100px;
+    }
+    75%{
+        left: 0px;
+        top: 100px;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+    
+} */
+/* What are you looking for? text and container styling */
+ .box{
+    display: flex;
+    height: 10vh;
+    width: 30%;
+    background-color: #FFFFFF;
+    margin: 0vh 0vh 2vh 75vh;
+ }
+ #box{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-left: 4vh;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    
+ }
+.MainContainer{
+    
+    height: 45vh;
+    width: 100%;
+    background-color:white;
+}
+.containers{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containers > div{
+    height: 18vh;
+    width: 20%;
+    background-color:white;
+    border-radius: 10px 0px 10px 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: inset 10px 12px 14px rgba(0,0,0,0.4), 14px 14px 12px rgba(0,0,0,0.4);
+}
+
+.lookText{
+    font-family: elephant;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-left: 3vh;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+}
+div i{
+    margin:5vh 0vh 0vh 4vh;
+    cursor: pointer;
+}
+.containers a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Magic movment container styling  */
+.Magicbodycont{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(2, 2, 46);
+    margin-top: 3vh;
+}
+.movcont{
+    display: flex;
+    justify-content: space-between;
+}
+.movcont > div {
+    height: 10vh;
+    width: 20%;
+    background-color: rgb(2, 2, 46);
+    margin:5vh 0vh 0vh 5vh;
+}
+.movcont > div h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 1vh 0vh 0.5vh 3vh;
+    letter-spacing: 1px;
+    font-size: 4.5vh;
+}
+.movcont .btn1{
+    height: 8vh;
+    width: 8%;
+    margin-top: 4.5vh;
+    margin-right: 12vh;
+    border-radius: 1vh;
+    border: 2px solid darkgray;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 3px 3px 3px rgba(0,0,0,0.3), inset -5px -5px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.magicMovments{
+    display: flex;
+    justify-content: space-evenly;
+}
+.magicMovments .magicItem{
+    height: 30vh;
+    width: 20%;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 5vh;
+    position: relative;
+}
+.magicMovmentsImg{
+    height: 30vh;
+    width: 100%;
+    border-radius: 5vh 5vh 0vh 0vh;
+    
+}
+.movText{
+    height: 15vh;
+    width: 100%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 0vh 0vh 5vh 5vh;
+    display: none;
+    position: absolute;
+}
+ .magicItem:hover .movText {
+    display: block;
+}
+
+/* Ipl exclusive styling  */
+.Exclbodycont{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(2, 2, 46);
+    display: block;
+}
+.Exclmcont{
+    display: flex;
+    justify-content: space-between;
+}
+.Exclmcont > div {
+    height: 10vh;
+    width: 20%;
+    background-color: rgb(2, 2, 46);
+    margin:5vh 0vh 0vh 5vh;
+}
+.Exclmcont > div h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 1vh 0vh 0.5vh 3vh;
+    letter-spacing: 1px;
+    font-size: 4vh;
+}
+.Exclmcont .btn2{
+    height: 8vh;
+    width: 8%;
+    margin-top: 4.5vh;
+    margin-right: 12vh;
+    border-radius: 1vh;
+    border: 2px solid darkgray;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 3px 3px 3px rgba(0,0,0,0.3), inset -5px -5px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.exclMovments{
+    display: flex;
+    justify-content: space-evenly;
+}
+.exclMovments .exclItem{
+    height: 30vh;
+    width: 20%;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 5vh;
+    position: relative;
+}
+.ExclMovmentsImg{
+    height: 30vh;
+    width: 100%;
+    border-radius: 5vh 5vh 0vh 0vh;
+    
+}
+.ExclText{
+    height: 15vh;
+    width: 100%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 0vh 0vh 5vh 5vh;
+    display: none;
+    position: absolute;
+}
+.exclItem:hover .ExclText {
+    display: block;
+}
+
+/* Ipl latest news container styling  */
+.LatNbodycont{
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(2, 2, 46);
+    display: block;
+}
+.Latncont{
+    display: flex;
+    justify-content: space-between;
+}
+.Latncont > div {
+    height: 10vh;
+    width: 20%;
+    background-color: rgb(2, 2, 46);
+    margin:5vh 0vh 0vh 5vh;
+}
+.Latncont > div h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 1vh 0vh 0.5vh 3vh;
+    letter-spacing: 1px;
+    font-size: 4vh;
+}
+.Latncont .btn3{
+    height: 6vh;
+    width: 7.5%;
+    margin-top: 4.5vh;
+    margin-right: 12vh;
+    border-radius: 1vh;
+    border: 2px solid darkgray;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 3px 3px 3px rgba(0,0,0,0.3), inset -5px -5px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.latestNews{
+    display: flex;
+    justify-content: space-evenly;
+}
+.latestNews .newsItem{
+    height: 30vh;
+    width: 20%;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 5vh;
+    position: relative;
+}
+.LatnImg{
+    height: 30vh;
+    width: 100%;
+    border-radius: 5vh 5vh 0vh 0vh;
+    
+}
+.LatnText{
+    height: 15vh;
+    width: 100%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    font-weight: bolder;
+    border-radius: 0vh 0vh 5vh 5vh;
+    display: none;
+    position: absolute;
+}
+.newsItem:hover .LatnText{
+    display: block;
+}
+/* footer banner styling */
+
+.info{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(28, 58, 132);
+    display: flex;
+    border-radius: 10vh 10vh 0vh 0vh;
+}
+.infoItem{
+    height: 70vh;
+    width: 50%;
+}
+.infoItem img{
+    height: 70vh;
+    width: 100%;
+}
+.infoItem h2{
+    font-family: cooper;
+    color: #FFFFFF;
+    font-size: 7vh;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.infoItem p, h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: larger;
+    margin: 0vh 0vh 0vh 5vh;
+    text-align: justify;
+    line-height: 5vh;
+}
+.infoItem a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 5vh;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 10vh;
+    margin-left: 5vh;
+}
+
+/* footer style */
+.footerCont{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(1, 1, 9);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerContBox14{
+    width: 20%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footerContBox23{
+    width: 30%;
+}
+.teamsFooter{
+    width: 20%;
+}
+
+.footerContItems{
+    height: 5vh;
+    width: 45vh;
+    background-color:rgb(1, 1, 9);
+    display: block;
+    margin-top: 3vh;
+    margin-left: 5vh;
+}
+
+.footerContItems a{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    text-align: center;
+}
+.footerContItems h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-left: 0vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+.copyright{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(1, 1, 9);
+    display: block;
+    margin-top: 0;
+}
+.copyright p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 3vh;
+    display: block;
+    margin: 0;
+
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav li {
+        width: 100%;
+    }
+    nav a {
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    nav a:hover {
+        background-color: rgb(4, 21, 76);
+        border-radius: 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .hamburger.active + ul {
+        display: flex;
+    }
+
+    /* Banner */
+    .banner-slider {
+        height: 300px;
+    }
+    .banner-caption {
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-caption h2 {
+        font-size: 20px;
+    }
+    .banner-caption p {
+        font-size: 12px;
+    }
+
+    .banner-caption img {
+        height: 120px;
+        width: auto;
+    }
+}
+
+/* Mobile Styles for Small Devices */
+@media (max-width: 480px) {
+    nav {
+        padding: 5px 10px;
+    }
+    nav .logo img {
+        height: 30px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .banner-slider img {
+        height: 250px;
+    }
+    .banner-caption h2 {
+        font-size: 18px;
+    }
+    .banner-caption p {
+        font-size: 10px;
+    }
+    .banner-caption img {
+        height: 100px;
+    }
+}
+
+  
