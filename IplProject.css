@@ -290,11 +290,13 @@ transform: skew(25deg);
     height: 45vh;
     width: 100%;
     background-color:white;
+    
 }
 .containers{
     display: flex;
     justify-content: space-evenly;
 }
+
 .containers > div{
     height: 18vh;
     width: 20%;
@@ -303,6 +305,11 @@ transform: skew(25deg);
     border-top: 2px solid black;
     border-right: 2px solid black;
     box-shadow: inset 10px 12px 14px rgba(0,0,0,0.4), 14px 14px 12px rgba(0,0,0,0.4);
+}
+
+.containers >div:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .lookText{
