@@ -269,14 +269,14 @@ transform: skew(25deg);
     
 } */
 /* What are you looking for? text and container styling */
- .box{
+ .whatArelook{
     display: flex;
     height: 10vh;
     width: 30%;
     background-color: #FFFFFF;
     margin: 0vh 0vh 2vh 75vh;
  }
- #box{
+ #whatArelook{
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     letter-spacing: 2px;
@@ -490,8 +490,9 @@ div i{
     font-size: 4vh;
 }
 .Latncont .btn3{
-    height: 6vh;
-    width: 7.5%;
+
+    height: 8vh;
+    width: 8%;
     margin-top: 4.5vh;
     margin-right: 12vh;
     border-radius: 1vh;
@@ -501,9 +502,6 @@ div i{
     font-family: 'Times New Roman', Times, serif;
     box-shadow: inset 3px 3px 3px rgba(0,0,0,0.3), inset -5px -5px 3px rgba(0,0,0,0.3);
     cursor: pointer;
-    background-color: white;
-    text-align: center;
-    padding-top: 2vh;
 }
 
 .latestNews{
@@ -561,6 +559,26 @@ div i{
     font-size: 7vh;
     text-align: center;
     letter-spacing: 1px;
+    animation: colorchange 4s infinite ;
+    /* transition: 3s ease-in-out; */
+}
+@keyframes colorchange {
+    0%{
+        color: white;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: yellowgreen;
+    }
+    100%{
+        color: blueviolet;
+    }
+    
 }
 .infoItem p, h5{
     font-family: 'Times New Roman', Times, serif;
